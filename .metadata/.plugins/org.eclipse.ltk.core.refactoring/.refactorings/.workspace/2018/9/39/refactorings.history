@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;led2/Src/dwt_stm32_delay.h&apos;" deleteContents="false" description="Delete resource &apos;led2/Src/dwt_stm32_delay.h&apos;" element1="/led2/Src/dwt_stm32_delay.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1537903327927"/>
+</session>
