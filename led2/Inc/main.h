@@ -63,8 +63,10 @@
 #define TCK_GPIO_Port GPIOA
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
-//Adruino connector D12
-#define D12_Pin PA6
+
+/*Timing definitions*/
+#define BLINK_TICKS1 (500)
+#define BLINK_TICKS2 (1500)
 
 /* ########################## Assert Selection ############################## */
 /**

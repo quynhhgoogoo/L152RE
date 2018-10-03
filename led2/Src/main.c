@@ -99,15 +99,22 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
-
+  int sw =1;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-  int freq = 10;
   /* USER CODE END WHILE */
-   HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-   HAL_Delay((1000*2)/freq);
+  if(sw) {
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  HAL_Delay(BLINK_TICKS1);
+	  sw = 0;
+  }
+  else {
+	  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+	  HAL_Delay(BLINK_TICKS2);
+	  sw = 1;
+  }
   /* USER CODE BEGIN 3 */
 
   }
