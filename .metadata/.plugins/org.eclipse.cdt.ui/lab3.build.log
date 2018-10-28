@@ -1,0 +1,25 @@
+09:55:56 **** Incremental Build of configuration Debug for project lab3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L152xE -I../Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o ..\Src\main.c 
+..\Src\main.c: In function 'main':
+..\Src\main.c:113:7: warning: implicit declaration of function '_HAL_TIM_GET_COUNTER' [-Wimplicit-function-declaration]
+    if(_HAL_TIM_GET_COUNTER(&htim2==5)){
+       ^~~~~~~~~~~~~~~~~~~~
+..\Src\main.c:113:34: warning: comparison between pointer and integer
+    if(_HAL_TIM_GET_COUNTER(&htim2==5)){
+                                  ^~
+..\Src\main.c:114:5: warning: implicit declaration of function '_HAL_TIM_SET_COUNTER' [-Wimplicit-function-declaration]
+     _HAL_TIM_SET_COUNTER(&htim2, 0);
+     ^~~~~~~~~~~~~~~~~~~~
+..\Src\main.c:115:5: warning: implicit declaration of function 'HAL_GPIO_TogllePin' [-Wimplicit-function-declaration]
+     HAL_GPIO_TogllePin(GPIOA, GPIO_PIN_5);
+     ^~~~~~~~~~~~~~~~~~
+arm-atollic-eabi-gcc -o lab3.elf Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cortex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dma.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ramfunc.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_gpio.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_uart.o Src\main.o Src\stm32l1xx_hal_msp.o Src\stm32l1xx_it.o Src\system_stm32l1xx.o startup\startup_stm32l152xe.o -mthumb -mcpu=cortex-m3 -T../STM32L152RE_FLASH.ld -specs=nosys.specs -static -Wl,-Map=lab3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+Src\main.o: In function `main':
+D:\Micro Lab\lab3\Debug/..\Src/main.c:113: undefined reference to `_HAL_TIM_GET_COUNTER'
+D:\Micro Lab\lab3\Debug/..\Src/main.c:114: undefined reference to `_HAL_TIM_SET_COUNTER'
+D:\Micro Lab\lab3\Debug/..\Src/main.c:115: undefined reference to `HAL_GPIO_TogllePin'
+collect2.exe: error: ld returned 1 exit status
+
+09:55:57 Build Finished (took 1s.187ms)
+

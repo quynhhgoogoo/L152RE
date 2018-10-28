@@ -1,0 +1,18 @@
+22:38:07 **** Incremental Build of configuration Debug for project lab1.3 ****
+Info: Internal Builder is used for build
+arm-atollic-eabi-gcc -c -mthumb -mcpu=cortex-m3 -std=gnu11 -D__weak=__attribute__((weak)) -D__packed=__attribute__((__packed__)) -DUSE_HAL_DRIVER -DSTM32L152xE -I../Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs -o Src\main.o ..\Src\main.c 
+arm-atollic-eabi-gcc -o lab1.3.elf Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_cortex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_dma.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_flash_ramfunc.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_gpio.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_pwr_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_rcc_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_tim_ex.o Drivers\STM32L1xx_HAL_Driver\Src\stm32l1xx_hal_uart.o Src\dwt_stm32_delay.o Src\main.o Src\stm32l1xx_hal_msp.o Src\stm32l1xx_it.o Src\system_stm32l1xx.o startup\startup_stm32l152xe.o -mthumb -mcpu=cortex-m3 -T../STM32L152RE_FLASH.ld -specs=nosys.specs -static -Wl,-Map=lab1.3.map -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -Wl,--start-group -lc -lm -Wl,--end-group -specs=nano.specs 
+D:\TrueSTUDIO for STM32 9.0.1\ide\jre\bin\java -jar D:\TrueSTUDIO for STM32 9.0.1\Tools\arm-atollic-reports.jar sizeinfo list lab1.3.elf 
+Generate build reports...
+Print size information
+   text	   data	    bss	    dec	    hex	filename
+   5332	     12	   1632	   6976	   1b40	lab1.3.elf
+Print size information done
+Generate listing file
+Output sent to: lab1.3.list
+Generate listing file done
+Generate build reports done
+arm-atollic-eabi-objcopy.exe -O ihex lab1.3.elf lab1.3.hex 
+
+22:38:08 Build Finished (took 1s.263ms)
+
