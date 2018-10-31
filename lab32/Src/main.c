@@ -106,17 +106,13 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  HAL_TIM_Base_Start(&htim2);
   while (1)
   {
 
-	  /* USER CODE END WHILE */
+  /* USER CODE END WHILE */
 
-	  /* USER CODE BEGIN 3 */
-	  if(__HAL_TIM_GET_COUNTER(&htim2)==5){
-		  __HAL_TIM_SET_COUNTER(&htim2, 0);
-		  HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-   	   }
+  /* USER CODE BEGIN 3 */
+
   }
   /* USER CODE END 3 */
 
@@ -184,9 +180,9 @@ static void MX_TIM2_Init(void)
   TIM_MasterConfigTypeDef sMasterConfig;
 
   htim2.Instance = TIM2;
-  htim2.Init.Prescaler = 64000;
+  htim2.Init.Prescaler = 39999;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 65535;
+  htim2.Init.Period = 400;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
   {
