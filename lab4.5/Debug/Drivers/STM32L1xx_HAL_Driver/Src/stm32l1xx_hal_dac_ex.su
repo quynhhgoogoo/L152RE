@@ -1,0 +1,11 @@
+stm32l1xx_hal_dac_ex.c:104:10:HAL_DACEx_DualGetValue	0	static
+stm32l1xx_hal_dac_ex.c:139:19:HAL_DACEx_TriangleWaveGenerate	12	static
+stm32l1xx_hal_dac_ex.c:187:19:HAL_DACEx_NoiseWaveGenerate	12	static
+stm32l1xx_hal_dac_ex.c:227:19:HAL_DACEx_DualSetValue	0	static
+stm32l1xx_hal_dac_ex.c:263:13:HAL_DACEx_ConvCpltCallbackCh2	0	static
+stm32l1xx_hal_dac_ex.c:279:13:HAL_DACEx_ConvHalfCpltCallbackCh2	0	static
+stm32l1xx_hal_dac_ex.c:295:13:HAL_DACEx_ErrorCallbackCh2	0	static
+stm32l1xx_hal_dac_ex.c:311:13:HAL_DACEx_DMAUnderrunCallbackCh2	0	static
+stm32l1xx_hal_dac_ex.c:338:6:DAC_DMAConvCpltCh2	8	static
+stm32l1xx_hal_dac_ex.c:353:6:DAC_DMAHalfConvCpltCh2	8	static
+stm32l1xx_hal_dac_ex.c:366:6:DAC_DMAErrorCh2	8	static
